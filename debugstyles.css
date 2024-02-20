@@ -1,0 +1,37 @@
+div {
+    border:solid;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
+    margin-left: 1em;
+}
+
+.lcounter {
+    border:solid #22880f;
+    background: #00eeaa;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1.5fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "name name"
+    "qty bundleqty" "add add" "subtract lock";
+}
+
+button[desc="subtract"] {
+    background: #ff867d;
+}
+
+button[desc="lock"] {
+    background: #c4c4c4;
+}
+
+button {
+    font-size: 1.25em;
+    background: #21cab6;
+    /*border: solid #22aa22;*/
+    border: none;
+    border-radius: 0.3em;
+}
